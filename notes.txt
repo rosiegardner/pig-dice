@@ -1,0 +1,70 @@
+1. What will happen when a user clicks "Play"?
+
+- When a user clicks play, PLAYER00 rolls a die numbered 1-6 and returns a value between 1 and 6. Both users start with a OVERALL score of 0. 
+
+- If the number rolled is greater than 1, that value will be added to the player's CURRENT score.
+
+- The player can opt to HOLD, updating the OVERALL score with the CURRENT score's value, and resetting the player's CURRENT score. 
+
+- If the number rolled is equal to 1, the current score is set to 0 and the OVERALL score cannot be updated. 
+
+- The other player (PLAYER001) now rolls and repeats the process. 
+
+- The first player to reach 100 wins.
+
+
+2. What objects will you need?
+
+- Player Object
+  - Properties: function Player(turn)
+        this.roll = 0;
+        this.currentscore = 0;
+        this.overallscore = 0;
+        this.isTurn = turn; // dictates which player is currently rolling
+        this.dice = newDice; 
+
+- Die Object
+  - Properties: rollDie() 
+    - Rolls die numbered 1-6 using Math.Random between 1 and 6.
+    - Displays the dice roll 
+    - If not a 1, add this number using updateCurrentScore()
+    - Display the new CURRENT score
+    - Triggered when pressing PLAY
+    
+  - Prototype Player: updateCurrentScore()
+    - IF that number is greater than 1, update currentscore for that player. Gather value and pass it somewhere. 
+
+  - Prototype Player: switchTurn()
+    - If the number is equal to 1; then set the current score for that player to 0 and switch players.
+
+  - Prototype Player: updateOverallScore()
+    - If the user presses HOLD, the OVERALLscore is updated with the CURRENTscore and the current score is set to 0.
+    - If the OverallScore is >= 100, resetScore(), else switchTurn()
+    - Then switchTurn(); 
+
+   - Prototype: resetScore() / newGame()
+    - Resets the OVERALL score, and CURRENT score to 0.  
+
+- Score
+
+  - Prototype Player: updateOverallScore()
+    - If the user presses HOLD, the OVERALLscore is updated with the CURRENTscore and the current score is set to 0.
+    - If the OverallScore is >= 100, indicates the winner (with a message using template literal?) resetScore(), else switchTurn()
+    - Then switchTurn(); 
+
+
+
+
+- Roll button - rolls die() function and display's number
+- Hold button - takes value from the CURRENTscore roll and saves to OVERALLscore
+
+
+
+3. What key-value pairs will each object need to contain in order for the game to work?
+
+4. What functions? 
+
+5. How will these be triggered throughout the gameplay? 
+
+6. When you have a broad overview of how you want to build your game, identify the simplest behavior, and perhaps what behaviors to tackle after that. Remember to start simple and work one step at a time.
+Code

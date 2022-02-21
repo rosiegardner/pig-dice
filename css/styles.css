@@ -1,0 +1,26 @@
+.jumbotron {
+  text-align: center;
+  background-color: #EBA69C;
+  font-size: 75px;
+  font-family: 'Bebas Neue', cursive;
+  margin: 50px;
+}
+
+button {
+  text-align: center;
+}
+#player-one {
+  border: 5px solid black;
+  height: 500px;
+  text-align: center;
+}
+
+#player-two {
+  border: 5px solid black;
+  height: 500px;
+  text-align: center; 
+
+}
+
+
+
