@@ -17,3 +17,8 @@ Describe Player.prototype.updateCurrentScore()
 *Code: updateCurrentScore()
 *Input: 1;
 *Expected Output: 0;
+
+*Test: This prototype will update the current value of rollScore if the die roll is greater than 1.
+*Code: updateCurrentScore()
+*Input: 2, 3, 4, 5, 6.
+*Expected Output: "True;"
