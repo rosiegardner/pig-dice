@@ -22,3 +22,9 @@ Describe Player.prototype.updateCurrentScore()
 *Code: updateCurrentScore()
 *Input: 2, 3, 4, 5, 6.
 *Expected Output: "True;"
+
+*Test: This prototype will combine the value of rollScore to currentScore.
+*Code: updateCurrentScore()
+Expected Output: "return this.currentScore"
+
+
