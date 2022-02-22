@@ -10,3 +10,10 @@ Describe Player.prototype.randomRoll()
 *Test: This prototype will randomized a number between 1-6 for the current value of the die roll score.
 *Code: randomRoll()
 *Expected output: Current value of "rollScore"
+
+Describe Player.prototype.updateCurrentScore()
+
+*Test: This prototype will reset the current rollScore back to 0 if die is equal to the value of 1.
+*Code: updateCurrentScore()
+*Input: 1;
+*Expected Output: 0;
