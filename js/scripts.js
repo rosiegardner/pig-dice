@@ -15,8 +15,6 @@ Player.prototype.randomRoll = function() {
   return this.rollScore
 }
 
-// 
-
 Player.prototype.updateCurrentScore = function() {
   if (this.rollScore === 1) {
     this.currentScore = 0;
@@ -27,11 +25,13 @@ Player.prototype.updateCurrentScore = function() {
   return this.currentScore
 }
 
-// Player.prototype.disablePlayer = function() {
-//   if (this.isTurn === false) {
-//   }
-// }
+Player.prototype.disablePlayer = function() {
+  if (this.isTurn === false) {
 
+  }
+}
+
+// if its 1 or you click hold, switch player
 // If we do an if/else statement saying if click.HOLD button in HTML, is that technically mixing business & user interface logic. 
 // If we click hold, add the value of the currentScore to the overallScore
 
@@ -103,7 +103,7 @@ $(document).ready(function() {
   });
 });
 
-// 
+// Start with disabled flag on Player two because isTurn === false; 
 
 
 // document.getElementById("p1-button-roll").disabled = true;
