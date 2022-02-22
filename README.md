@@ -5,3 +5,8 @@ Code: Player()
 Input: overallScore, currentScore, rollScore, turn.
 Expected Output: "overallScore, currentScore, rollScore, turn."
 
+Describe Player.prototype.randomRoll()
+
+*Test: This prototype will randomized a number between 1-6 for the current value of the die roll score.
+*Code: randomRoll()
+*Expected output: Current value of "rollScore"
