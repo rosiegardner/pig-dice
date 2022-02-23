@@ -33,6 +33,6 @@ Expected Output: "return this.currentScore"
 *Code: hold()
 *Expected Output: 0;
 
-*Test: Once hold button is submitted it will combine the value of currentScore and overallScore.
+*Test: Once hold button is submitted it will combine the value of currentScore with overallScore.
 *Code: hold()
 Expected Output: "return this.overallScore"
