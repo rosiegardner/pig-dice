@@ -56,28 +56,24 @@ $(document).ready(function() {
   const player01 = new Player(0, 0, 0);
   const player02 = new Player(0, 0, 0);
   player02.isTurn = false; 
-
   // click roll 
-  $("button#p1-button-roll").click(function(event) {
-    event.preventDefault();
-    let currentRoll = player01.randomRoll();
-    let currentScore = player01.updateCurrentScore();
-    $("#player1-rollDie").text(currentRoll);
-    $("#current-score1").text(currentScore);
-
+  $("button#p1-button-roll").click(function() {
+     let currentRoll = player01.randomRoll();
+     let currentScore = player01.updateCurrentScore();
+     $("#player1-rollDie").text(currentRoll);
+     $("#current-score1").text(currentScore);
+  });
   // click hold
-    $("button#p1-button-hold").click(function(event)  {
-    event.preventDefault();
-    player01.switchTurn();
-    let overallScore = player01.hold();
-    let currentScore = 0;
-    $("#overall-score1").text(overallScore);
-    $("#current-score1").text(currentScore);
-    $("#p1-button-hold").hide();
-    $("#p1-button-roll").hide();
-    $("#p2-button-hold").show();
-    $("#p2-button-roll").show();
-    });
+    $("button#p1-button-hold").click(function()  {
+      player01.switchTurn();
+      let overallScore = player01.hold();
+      let currentScore = 0;
+      $("#overall-score1").text(overallScore);
+      $("#current-score1").text(currentScore);
+      $("#p1-button-hold").hide();
+      $("#p1-button-roll").hide();
+      $("#p2-button-hold").show();
+      $("#p2-button-roll").show();
   });
 });
 
